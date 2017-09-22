@@ -1,0 +1,229 @@
+@charset "utf-8";
+body{
+	height: auto;
+}
+.head{
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      font-size: 1.8rem;
+      color: white;
+      background: #1FBFCB;
+}
+.head span{
+      display: inline-block;
+      text-align: center;
+      margin-left: 14px;
+}
+.head span:nth-of-type(2){
+      color: #0a5055;
+}
+.head span:nth-of-type(4){
+      padding-left: 196px;
+}
+.kuaibao_box{
+	width: 100%;
+	height: 100px;
+}
+.cont{
+      width: 720px;
+      height: auto;
+      border: 2px solid #EEEEEE;
+      margin: 20px auto;
+}
+.cont .search{
+      width: 700px;
+      height: 70px;
+      line-height: 70px;
+      margin: 10px;
+      background: #FFF;
+      display: flex;
+      font-size: 1.3rem;
+}
+.new{
+	  
+      background: #1FBFCB;
+      border-bottom: 2px solid #0a5055;
+      
+}
+.cont .search>li{
+	color: #0a5055;
+	  text-align: center;
+	  flex-grow: 1;
+	  margin: 0 auto;
+}
+.cont .search>li:nth-of-type(1){
+	color: #fff;
+}
+.cont .box{
+      width: 700px;
+      height: 120px;
+      margin: 10px;
+      border-bottom: 2px solid #fff;
+}
+.cont .box_dong{
+      width: 700px;
+      height: 120px;
+      margin: 10px;
+      border-bottom: 2px solid #fff;
+      display: none;
+}
+.cont .box_deg{
+      width: 700px;
+      height: 120px;
+      margin: 10px;
+      border-bottom: 2px solid #fff;
+      display: none;
+}
+.cont .box .pic{
+      float: left;
+      width: 150px;
+      height: 100px;
+      margin: 4px 0;  
+      border: 2px solid #fff;
+}
+.cont .box_dong .pic{
+      float: left;
+      width: 150px;
+      height: 100px;
+      margin: 4px 0;
+      border: 2px solid #FFFFFF;
+}
+.cont .box_deg .pic{
+      float: left;
+      width: 150px;
+      height: 100px;
+      margin: 4px 0;
+      border: 2px solid #fff
+      ;
+}
+.cont .box .pic>img{
+      width: 100%;
+      height: 100%;
+}
+.cont .box_dong .pic>img{
+      width: 100%;
+      height: 100%;
+}
+.cont .box_deg .pic>img{
+      width: 100%;
+      height: 100%;
+}
+.cont .box .text{
+      float: left;
+      padding: 4px 0;
+      width: 540px;
+      height: 110px;
+      overflow: hidden;
+      font-size: 1.3rem;
+}
+.cont .box_dong .text{
+      float: left;
+      width: 540px;
+      height: 110px;
+      overflow: hidden;
+}
+.cont .box_deg .text{
+      float: left;
+      width: 540px;
+      height: 110px;
+      overflow: hidden;
+}
+.cont .box .text:hover{
+      background: #EEE;
+}
+.cont .box_dong .text:hover{
+      background: #EEE;
+}
+.cont .box_deg .text:hover{
+      background: #EEE;
+}
+.cont .box .text>p{
+      padding: 4px 5px;
+}
+.cont .box_dong .text>p{
+      padding: 4px 5px;
+}
+.cont .box_deg .text>p{
+      padding: 4px 5px;
+}
+.cont .box .text>p:nth-child(1){
+      font-size: 1rem;
+      color: #0a5055;
+}
+.cont .box .text>p:nth-child(2){
+      font-size: 0.8rem;
+      color: #a59999;
+}
+.cont .box .text>p:nth-child(3){
+      font-size: 0.6rem;
+      color: #666;
+}
+.cont .box_dong .text>p:nth-child(1){
+      font-size: 14px;
+      color: #0a5055;
+}
+.cont .box_dong .text>p:nth-child(2){
+      font-size: 10px;
+      color: #a59999;
+}
+.cont .box_dong .text>p:nth-child(3){
+      font-size: 10px;
+      color: #666;
+}
+.cont .box_deg .text>p:nth-child(1){
+      font-size: 14px;
+      color: #0a5055;
+}
+.cont .box_deg .text>p:nth-child(2){
+      font-size: 10px;
+      color: #a59999;
+}
+.cont .box_deg .text>p:nth-child(3){
+      font-size: 10px;
+      color: #666;
+}
+.cont .footer{
+      width: 400px;
+      height: 30px;
+      margin: 0 auto;
+}
+.cont .footer>span{
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+}
+.cont .footer>input{
+      text-align: center;
+      width: 22px;
+      height: 22px;
+      border: 1px solid #000;
+}
+.foot{
+      padding-top: 30px;
+      width: 1340px;
+      height: 100px;
+}
+.foot>span{
+      color: #3666CC;
+      font-size: 10px;
+      border-right: 1px solid #666;
+      padding: 0 4px;
+      display: inline-block;
+      margin: 0 auto;
+}
+.foot>span:nth-child(1){
+      margin-left: 540px;
+}
+.foot>span:nth-child(4){
+      border: none;
+}
+.foot>p{
+      font-size: 10px;
+      padding: 10px;
+      text-align: center;
+}
+

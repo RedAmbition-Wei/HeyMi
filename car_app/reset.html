@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color: #f3f7fa;
+			}
+			nav{
+				width: 100%;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				font-size: 1.8rem;
+				background: #1FBFCB;
+				color: white;
+			}
+			.box{
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				margin-top: 20px;
+			}
+			.mima{
+				position: relative;
+				border: 0;
+				text-align: right;
+				width: 100%;
+				height: 78px;
+				border-bottom: 1px solid #bfbfbf;
+			}
+			.mimao{
+			    position: absolute;
+			    top: 136px;
+			    left: 16px;
+			    width: 160px;
+			    height: 58px;
+			    line-height: 58px;
+			    text-align: center;
+			}
+			.newmima{
+				border: 0;
+				text-align: right;
+				width: 100%;
+				height: 78px;
+				border-bottom: 1px solid #bfbfbf;
+			}
+			.newmimao{
+				    position: absolute;
+				    top: 214px;
+				    left: 20px;
+				    width: 160px;
+				    height: 58px;
+				    line-height: 58px;
+				    text-align: center;
+			}
+			.can{
+				text-align: center;
+				height: 80px;
+				line-height: 80px;
+				width: 720px;
+				margin: 0 auto;
+				background-color: #1FBFCB;
+				margin-top: 30px;
+				color: white;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body style="display:none">
+		<nav>修改密码</nav>
+		<div class="box" style="font-size: 1.28rem;">
+			<input type="password" placeholder="请输入6位数字或字母" class="mima"/>
+			<p class="mimao">设置新密码</p>
+			<input type="password" placeholder="请再次输入密码" class="newmima"/>
+			<p class="newmimao">重复新密码</p>
+		</div>
+		
+		<div class="can" onclick="base.jumpPage('login.html')" style="font-size: 1.5rem;">
+			确认提交
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/zoom.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">		
+				var mi = () => {
+					var	num	= /^[a-zA-Z][\w]{0,6}$/;
+					var one = $('.mima').val();
+					var two = $('.newmima').val();
+					one = one.match(num);
+						if(one === two){
+							base.commonAjax('login/register','login_name='+name+'&password='+pwd,'');
+						}else{
+							alert('两次密码输入不一致')
+						}
+						
+				}
+		</script>
+	</body>
+</html>

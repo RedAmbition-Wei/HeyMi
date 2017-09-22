@@ -1,0 +1,58 @@
+   <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择品牌</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/brand.css"/>
+	</head>
+	<body style="display: none;">
+		<nav>
+			<span onclick="base.jumpPage('issue.html')"><img src="img/jiantou.png"/></span>
+			<span>选择品牌</span>
+		</nav>
+		<div class="brand_box"></div>
+		<ol class="brand">
+			<p class="brand_character">全部品牌</p>
+			<!--<div>
+				<p>B</p>
+				<li onclick="base.jumpPage('motorcycle.html')">奔驰<span>10条</span></li>
+				<li onclick="base.jumpPage('motorcycle.html')">宝马<span>10条</span></li>
+				<li onclick="base.jumpPage('motorcycle.html')">保时捷<span>10条</span></li>
+			</div>
+			<div>
+				<p>F</p>
+				<li onclick="base.jumpPage('motorcycle.html')">福特<span>10条</span></li>
+				<li onclick="base.jumpPage('motorcycle.html')">丰田<span>10条</span></li>
+			</div>	
+			<div>
+				<p>L</p>
+				<li onclick="base.jumpPage('motorcycle.html')">路虎<span>10条</span></li>
+			</div>
+			<div>
+				<p>J</p>
+				<li onclick="base.jumpPage('motorcycle.html')">JEEP<span>10条</span></li>
+			</div>
+			<div>
+				<p>M</p>
+				<li onclick="base.jumpPage('motorcycle.html')">玛莎拉蒂<span>10条</span></li>
+			</div>
+			<div>
+				<p>O</p>
+				<li onclick="base.jumpPage('motorcycle.html')">沃尔沃<span>10条</span></li>
+			</div>
+			<div>
+				<p>R</p>
+				<li onclick="base.jumpPage('motorcycle.html')">日产<span>10条</span></li>
+			</div>
+			<p></p>-->
+		</ol>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+			base.commonAjax('brand/getbrandlist.html','','brand.carversion_information')
+		</script>
+	</body>
+</html>

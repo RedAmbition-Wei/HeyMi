@@ -1,0 +1,93 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	background: #f3f7fa;
+	color: #0A5055;
+}
+nav{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	background: #1FBFCB;
+	color: white;
+	font-size: 1.8rem;
+}
+nav img{
+	position: relative;
+    top: 7px;
+    right: 7px;
+	width: 24px;
+    height: 36px;
+}
+nav span:nth-of-type(1){
+	margin-left: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin-top: 4px;
+}
+nav span:nth-of-type(2){
+	margin-left: 200px;
+}
+nav span:nth-of-type(3){
+	margin-right: 30px;
+	float: right;
+}
+div{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 50px;
+	font-size: 1.5rem;
+	
+}
+div p{
+	background: white;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	border-bottom: 1px solid #D7DFE4;
+	text-indent: 20px;
+}
+div p:nth-of-type(3)>input{
+	width: auto;
+	height: auto;
+	border: 0;
+	margin-left: 440px;
+	text-align: center;
+}
+div p:nth-of-type(6){
+	margin-top: 40px;
+}
+div p:nth-of-type(9){
+	border-top: 1px solid #D7DFE4;
+	margin-top: 40px;
+}
+div p:nth-of-type(10){
+	width: 100%;
+	height: 300px;
+}
+div p:nth-of-type(10) textarea{
+	width: 100%;
+	height: 300px;
+	line-height: 100px;
+	color: #818585;
+	border: 0px solid transparent;
+}
+.issue_icon{
+	float: right;
+	margin-right: 30px;
+	font-size: 2rem;
+	color: #818585;
+}
+.issue_box{
+	display: inline-block;
+	width: 574px;
+	height: 35px;
+    line-height: 35px;
+    text-align: right;
+	border: 0px solid transparent;
+}

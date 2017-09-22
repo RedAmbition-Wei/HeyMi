@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- 页面禁止缩放 -->
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<!-- 禁止数字变成电话号码 -->
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<meta name="format-detection" content="telphone=no">
+	<title>发布车源</title>
+	<link rel="stylesheet" href="css/release.css">
+</head>
+<body page='2'>
+	<header class="release-header">
+		<ul>
+			<li class="click-show release_active">出售中(12)</li>
+			<li>已下架(2) </li>
+		</ul>
+	</header>
+	<div class="release-box"></div>
+	<div class="release-body">
+		<div>
+			<div class="no_car"></div>
+			<h4>发布车源</h4>
+		</div>
+		<div onclick="base.jumpPage('company.html')">马上去认证</div>
+	</div>
+	
+	<div id="footer"></div>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script src="js/zoom.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script>
+		Jump.jump();
+	</script>
+</body>
+</html>

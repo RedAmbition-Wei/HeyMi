@@ -1,0 +1,119 @@
+@charset "utf-8";
+body{
+	background-color: #C5C5C5;
+}
+.title{
+	width: 100%;
+	height: 120px;
+	background-color: white;
+}
+.carname{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 12px;
+	font-size: 30px;
+	margin-top: 28px;
+}
+.money{
+	margin-top: 28px;
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 20px;
+	color: red;
+	font-size: 26px;
+}
+.clear{
+	clear: both;
+}
+.time{
+	text-indent: 12px;
+	color: #C5C5C5;
+	margin-top: 10px;
+}
+.list{
+	margin-top: 16px;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-color: white;
+}
+.list .color_car{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	border-bottom: 1px solid #C5C5C5;
+}
+.list .color_car p{
+	width: 260px;
+	text-indent: 24px;
+	float: left;
+	color: #737272;
+	font-size: 26px;
+}
+.list .color_car span{
+	display: inline-block;
+	font-size: 26px;
+}
+.list .set_car{
+	width: 100%;
+	height: 240px;
+	border-bottom: 1px solid #C5C5C5;
+}
+.list .set_car p{
+	width: 260px;
+	height: 240px;
+	line-height: 80px;
+	text-indent: 24px;
+	float: left;
+	font-size: 26px;
+	color: #737272;
+}
+.list .set_car span{
+	margin-top: 20px;
+	width: calc(100% - 260px);
+	height: 210px;
+	float: left;
+	display:block;
+	font-size: 26px;
+	overflow: hidden;
+}
+.list .img_car{
+	width: 100%;
+	height: 130px;
+	border-bottom: 1px solid #C5C5C5;
+}
+.list .img_car p{
+	width: 260px;
+	height: 130px;
+	line-height: 130px;
+	text-indent: 24px;
+	float: left;
+	font-size: 26px;
+	color: #737272;
+}
+
+.people{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	margin-top: 26px;
+}
+.face{
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin: 15px;
+	overflow: hidden;
+	background-color: black;
+}
+.face img{
+	width: 70px;
+	height: 70px;
+}
+.people .name{
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 24px;
+}

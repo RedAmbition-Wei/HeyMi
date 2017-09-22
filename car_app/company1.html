@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- 页面禁止缩放 -->
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<!-- 禁止数字变成电话号码 -->
+	<meta name="format-detection" content="telphone=no">
+	<title>身份认证</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" href="css/release.css">
+</head>
+<body>
+	<nav>
+		<span onclick="jumpPage('company.html')"><img src="img/jiantou.png"/>返回</span>
+		<span>选择身份认证/所属公司品牌</span>
+	</nav>
+	<div class="company1-box"></div>
+	<div class="company1-body">
+		<ul>
+			<li>
+				<div class="submin">公司全称</div>
+				<input type="text" placeholder="请填写营业执照全称">
+			</li>
+			<li>
+				<div class="submin">详细地址</div>
+				<input type="text" placeholder="请填写公司详细地址">
+			</li>
+			<li>
+				<div class="submin">职位</div>
+				<input type="text" placeholder="如销售经理">
+			</li>
+		</ul>
+		<div class="shang">上传名片<span>></span></div>
+		<div class="submit">提交</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script src="js/zoom.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		var jumpPage = (url) => {
+		   	 window.location = url;
+		   }
+		rel.release();
+	</script>
+</body>
+</html>

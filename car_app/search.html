@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>找人/车商</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<style type="text/css">
+			nav{
+					position: fixed;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100px;
+					line-height: 100px;
+					background: #1FBFCB;
+					color: white;
+					font-size: 1.5rem;
+				}
+			nav img{
+				position: relative;
+			    top: 7px;
+			    right: 7px;
+				width: 24px;
+			    height: 36px;
+			}
+			nav span:nth-of-type(1){
+				margin-left: 20px;
+			    display: inline-block;
+			    width: 100px;
+			    height: 50px;
+			    margin-top: 4px;
+			}
+			nav span:nth-of-type(2){
+				margin-left: 200px;
+			}
+			nav span:nth-of-type(3){
+				margin-right: 30px;
+				float: right;
+			}
+			div{
+				width: 100%;
+				height: 100px;
+			}
+			.search{
+				width: 95%;
+				margin: 0.8em auto;
+				height: 90px;
+				margin-top: 100px;
+				border: 1px solid #1FBFCB;
+				display: flex;
+				-webkit-border-radius: 0.5em;
+				-moz-border-radius: 0.5em;
+				border-radius: 0.5em;
+				overflow: hidden;
+			}
+			.search>input{
+				display: inline-block;
+				border: 0;
+				font-size: 1.7em;
+			}
+			.search>input:nth-of-type(1){
+				flex-grow: 4;
+				text-indent: 1em;
+			}
+			.search>input:nth-of-type(2){
+				flex-grow: 1;
+				background-color: #1FBFCB;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<span onclick="base.jumpPage('find.html')"><img src="img/jiantou.png"/>返回</span>
+			<span>找人/车商</span>
+		</nav>
+		<div></div>
+		<div class="search">
+			<input type="text" placeholder="请输入手机号码/姓名/公司名称进行查找" id="searchval"/>
+			<input type="button" value="搜索" onclick="search.car()"/>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/zoom.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+			base.commonAjax('','','');
+		</script>
+	</body>
+</html>

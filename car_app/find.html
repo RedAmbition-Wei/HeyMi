@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="utf-8" />
+		<title>发现</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="font/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/find.css"/>
+	</head>
+	<body style="display: none;" page='3'>
+		<p>发现</p>
+		<div class="find_box"></div>
+		<ul class="group">
+			<li onclick="base.jumpPage('kuaibao.html')">
+				<p class="bgimg3"><i class="fa fa-file-text-o" aria-hidden="true"></i></p>
+				起越天成快报
+				<span>></span>
+			</li>
+			<li onclick="base.jumpPage('search.html')">
+				<p class="bgimg3"><i class="fa fa-search" aria-hidden="true"></i></p>
+				找人/车商
+				<span>></span>
+			</li>
+			<li onclick="base.jumpPage('database.html')">
+				<p class="bgimg3"><i class="fa fa-home" aria-hidden="true"></i> </p>
+				车型资料库
+				<span>></span>
+			</li>
+		</ul>
+		<ul class="group">
+			<li onclick="base.jumpPage('back.html')">
+				<p class="bgimg3"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i></p>
+				意见反馈
+				<span>></span>
+			</li>
+			<li onclick="tel()">
+				<p class="bgimg3"><i class="fa fa-user-plus" aria-hidden="true"></i></p>
+				联系客服
+				<span>></span>
+			</li>
+		</ul>
+		<div class="popup">
+			<p>拨打电话17702256690</p>
+			<p onclick="hide()">取消</p>
+		</div>
+		<div class="kong"></div>
+		<div id="footer"></div>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/zoom.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+			Jump.jump(); 
+			var tel = function(){
+				$('.popup').show();
+			}
+			var hide = function(){
+				$('.popup').hide();
+			}
+		</script>
+	</body>
+</html>

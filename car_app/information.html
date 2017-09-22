@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>寻车信息</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/information.css"/>
+	</head>
+	<body style="display: none;" page='1'>
+		<nav>
+			<span onclick="base.jumpPage('issue.html')">+发布寻车</span>
+			<span>寻车信息</span>
+		</nav>
+		<div class="information_box"></div>
+		<div class="information_brand">全部品牌</div>
+		<ol class="information_tab">
+			<!--<p>B</p>
+			<li>奔驰<span>10条</span></li>
+			<li>宝马<span>10条</span></li>
+			<li>保时捷<span>10条</span></li>
+			<p>F</p>
+			<li>福特<span>10条</span></li>
+			<li>丰田<span>10条</span></li>
+			<p>L</p>
+			<li>路虎<span>10条</span></li>
+			<p>J</p>
+			<li>JEEP<span>10条</span></li>
+			<p>M</p>
+			<li>玛莎拉蒂<span>10条</span></li>
+			<p>O</p>
+			<li>沃尔沃<span>10条</span></li>-->
+			
+		</ol>
+		<ul class="information_content" onclick="base.jumpPage('particulars.html')">
+				<li><span>寻奥迪A6L 4188，卖菏泽</span><span>11:34</span></li>
+				<li>黑色/黑</li>
+				<li>价格：15.4万</li>
+		</ul>
+		<ul class="information_content" onclick="base.jumpPage('particulars.html')">
+				<li><span>寻奥迪A6L 4188，卖菏泽</span><span>11:34</span></li>
+				<li>黑色/黑</li>
+				<li>价格：15.4万</li>
+		</ul>
+		<ul class="information_content" onclick="base.jumpPage('particulars.html')">
+				<li><span>寻奥迪A6L 4188，卖菏泽</span><span>11:34</span></li>
+				<li>黑色/黑</li>
+				<li>价格：15.4万</li>
+		</ul>
+		<ul class="information_content" onclick="base.jumpPage('particulars.html')">
+				<li><span>寻奥迪A6L 4188，卖菏泽</span><span>11:34</span></li>
+				<li>黑色/黑</li>
+				<li>价格：15.4万</li>
+		</ul>
+		<ul class="information_content" onclick="base.jumpPage('particulars.html')">
+				<li><span>寻奥迪A6L 4188，卖菏泽</span><span>11:34</span></li>
+				<li>黑色/黑</li>
+				<li>价格：15.4万</li>
+		</ul>
+		<ul class="information_content" onclick="base.jumpPage('particulars.html')">
+				<li><span>寻奥迪A6L 4188，卖菏泽</span><span>11:34</span></li>
+				<li>黑色/黑</li>
+				<li>价格：15.4万</li>
+		</ul>
+		<ul class="information_content" onclick="base.jumpPage('particulars.html')">
+				<li><span>寻奥迪A6L 4188，卖菏泽</span><span>11:34</span></li>
+				<li>黑色/黑</li>
+				<li>价格：15.4万</li>
+		</ul>
+		<div id="footer"></div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+			Jump.jump();
+			base.commonAjax('brand/getbrandlist.html','','issue.carversion_information');
+			var adiv=document.getElementsByClassName('information_brand')[0];
+			var aol=document.getElementsByClassName('information_tab')[0];
+				adiv.onmouseover=aol.onmouseover=function(){
+					aol.className='active information_tab';
+				}
+				aol.onmouseout=aol.onmouseout=function(){
+						aol.className='information_tab';
+				}
+		</script>
+	</body>
+</html>

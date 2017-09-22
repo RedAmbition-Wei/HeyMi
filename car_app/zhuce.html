@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color: #f3f7fa;
+			}
+			nav{
+				width: 100%;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				font-size: 1.8rem;
+				background: #1FBFCB;
+				color: white;
+			}
+			.tel{
+				position: relative;
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+			}
+			.namber{								
+				border: 0;
+				text-indent: 176px;
+				width: 100%;
+				height: 78px;
+				border-bottom: 1px solid #bfbfbf;
+			}
+			.mess{
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				width: 230px;
+				height: 58px;
+				border-radius:10px ;
+				line-height: 58px;
+				text-align: center;
+				background-color: #009326;
+				color: white;
+			}
+			.yz{
+				border: 0;
+				text-indent: 176px;
+				width: 100%;
+				height: 78px;
+				border-bottom: 1px solid #bfbfbf;
+			}
+			.zh{
+				position: relative;
+				border: 0;
+				text-align: right;
+				text-indent: 130px;
+				width: 100%;
+				height: 78px;
+				border-bottom: 1px solid #bfbfbf;
+			}
+			.zho{
+				position: absolute;
+				top: 110px;
+				left: 6px;
+				width: 160px;
+				height: 58px;
+				line-height: 58px;
+				text-align: center;
+			}
+			.mima{
+				border: 0;
+				text-align: right;
+				width: 100%;
+				height: 78px;
+				border-bottom: 1px solid #bfbfbf;
+			}
+			.mimao{
+				position: absolute;
+				top: 188px;
+				left: 6px;
+				width: 160px;
+				height: 58px;
+				line-height: 58px;
+				text-align: center;
+			}
+			.newname{
+				border: 0;
+				text-indent: 176px;
+				width: 100%;
+				height: 78px;
+				border-bottom: 1px solid #bfbfbf;
+			}
+			.newnameo{
+				position: absolute;
+				top: 352px;
+				left: 20px;
+				width: 160px;
+				height: 58px;
+				line-height: 58px;
+				text-align: center;
+			}
+			.name{
+				border: 0;
+				text-indent: 176px;
+				width: 100%;
+				height: 78px;
+				border-bottom: 1px solid #bfbfbf;
+			}
+			.nameo{
+				position: absolute;
+				top: 270px;
+				left: 0;
+				width: 160px;
+				height: 58px;
+				line-height: 58px;
+				text-align: center;
+			}
+
+			.com{
+				border: 0;
+				text-indent: 176px;
+				width: 100%;
+				height: 78px;
+				border-bottom: 1px solid #bfbfbf;
+			}
+			.como{
+				position: absolute;
+				top:  426px;
+				left: 20px;
+				width: 160px;
+				height: 58px;
+				line-height: 58px;
+				text-align: center;
+			}
+			.gree{
+				padding-top:20px ;
+				width: 700px;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 12px;
+				font-size: 1.28rem;
+			}
+			.gree a{
+				color: blue;
+			}
+			.end{
+				text-align: center;
+				height: 80px;
+				line-height: 80px;
+				width: 720px;
+				margin: 0 auto;
+				background-color: #1FBFCB;
+				margin-top: 30px;
+				color: white;
+				border-radius: 10px;
+				font-size: 1.5rem;
+			}
+		</style>
+	</head>
+	<body style="display: none;">	
+		<nav>新用户注册</nav>
+		<div class="tel">
+			<input type="text" placeholder="输入注册手机号" class="namber"/>
+			<input class="mess" id="btnSendCode" type="button" value="获取短信验证码" onclick="sendMessage()" />			
+			<input type="text" placeholder="输入短信验证码" class="yz"/>
+		</div>
+		<div class="concent" style="font-size: 1.28rem;">	
+			<p class="zho">帐&nbsp;&nbsp;&nbsp;号</p>			
+			<p class="mimao">验证码</p>
+			<input type="password" placeholder="请输入密码" class="name"/>
+			<p class="nameo">密码</p>
+			<input type="password" placeholder="请确认密码" class="newname"/>
+			<p class="newnameo">确认密码</p>
+			<input type="text" placeholder="请输入公司名称" class="com"/>
+			<p class="como">所属公司</p>
+		</div>
+		
+			<p class="gree">
+				我已阅读并同意<a>《车行用户服务使用协议》</a>
+			</p>
+		<div class="end">
+			完成注册
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/zoom.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+			var InterValObj; //timer变量，控制时间
+			var count = 60; //间隔函数，1秒执行
+			var curCount;//当前剩余秒数
+			var code = ""; //验证码
+			var codeLength = 6;//验证码长度
+			function sendMessage() {
+				curCount = count;
+				var dealType; //验证方式
+				var uid=$("#uid").val();//用户uid
+				if ($("#phone").attr("checked") == true) {
+								dealType = "phone";
+							}
+							else {
+								dealType = "email";
+							}
+							//产生验证码
+				for (var i = 0; i < codeLength; i++) {
+								code += parseInt(Math.random() * 9).toString();
+							}
+							//设置button效果，开始计时
+								$("#btnSendCode").attr("disabled", "true");
+								$("#btnSendCode").val("请在" + curCount + "秒内输入验证码");
+								InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+				//向后台发送处理数据
+                $.ajax({
+                    type: "POST", //用POST方式传输
+                    dataType: "text", //数据格式:JSON
+                    url: 'Login.ashx', //目标地址
+                    data: "dealType=" + dealType +"&uid=" + uid + "&code=" + code,
+                    error: function (XMLHttpRequest, textStatus, errorThrown) { },
+                    success: function (msg){ }
+                });
+	    	}
+				//timer处理函数
+			function SetRemainTime() {
+					if (curCount == 0) {                
+						window.clearInterval(InterValObj);//停止计时器
+						$("#btnSendCode").removeAttr("disabled");//启用按钮
+						$("#btnSendCode").val("重新发送验证码");
+						code = ""; //清除验证码。如果不清除，过时间后，输入收到的验证码依然有效    
+					}
+					else {
+						curCount--;
+						$("#btnSendCode").val("请在" + curCount + "秒内输入验证码");
+					}
+			}
+		</script>
+		
+	</body>
+</html>

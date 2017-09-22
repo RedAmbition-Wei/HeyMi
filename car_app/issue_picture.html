@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/issue_picture.css"/>
+		<link rel="stylesheet" href="font/css/font-awesome.min.css" />
+	</head>
+	<body style="display: none;">
+		<nav>
+			<span onclick="base.jumpPage('issue_screen.html')"><img src="img/jiantou.png"/>返回</span>
+			<span>上传图片</span>
+			<span>保存</span>
+		</nav>
+		<div class="pc">
+				<div class="pot">
+					<img class="picture" onclick="sign.getimg($(this))" src="img/addimg.png"/>
+                    <form style="display: none;" action="" enctype="multipart/form-data" method="post" class="formdata">
+                        <input name="token" type="hidden" value=""/>
+                        <input name="face" class="face" type="file" onchange="sign.showimg(this,$(this))"/>
+                    </form>
+				</div>	
+			</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script src="js/zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			window.onload = function () {
+            	$('input[name = "token"]').val(base.cartoken());
+            }
+		</script>
+	</body>
+</html>

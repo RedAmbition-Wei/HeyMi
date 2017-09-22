@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择车型</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/issue_motorcycle.css"/>
+	</head>
+	<body style="display: none;">
+		<nav>
+			<span onclick="jumpPage('issue_brand.html')"><img src="img/jiantou.png"/>返回</span>
+			<span>选择车系</span>
+		</nav>
+		<div>
+			<!--<h3>保时捷</h3>
+			<p onclick="jumpPage('issue_screen.html')">卡宴基本</p>
+			<p onclick="jumpPage('issue_screen.html')">帕纳梅拉基本</p>
+			<p onclick="jumpPage('issue_screen.html')">帕纳梅拉4</p>
+			<p onclick="jumpPage('issue_screen.html')">帕纳梅拉4s</p>-->
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+			var jumpPage = (url) => {
+		   	 window.location = url;
+		   }
+			base.commonAjax('carversion/getversionlist.html','brand_id='+base.brand_id()+'','mtorcycle.carversion_mtorcycle')
+		</script>
+	</body>
+</html>

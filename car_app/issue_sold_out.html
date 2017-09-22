@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/issue_sold_out.html.css"/>
+	</head>
+	<body style="display: none;">
+		<nav>
+			<div>
+				<span onclick="jumpPage('issue_screen.html')">+发布</span>
+			</div>
+			<div class="issue_sold_out_select">
+				<span onclick="jumpPage('issue_information.html')">出售中(12)</span><span class="issue_sold_out_active" >已下架(2)</span>
+			</div>
+		</nav>
+		<div class="issue_sold_out_empty"></div>
+		<div class="issue_sold_out_box">提示：下架车辆60天内不清除，系统自动删除！！！</div>
+		<ul class="issue_sold_out_content">
+				<li><span>寻奥迪A6L 4188，卖菏泽</span><span>11:34</span></li>
+				<li>黑色/黑</li>
+				<li>价格：<span>15.4</span>万</li>
+		</ul>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var jumpPage = (url) => {
+		   	 window.location = url;
+		   }
+			$('.issue_sold_out_select>span').click(function(){
+				var $this = $(this).index();
+				$('.issue_sold_out_select>span').eq($this).addClass('issue_sold_out_active').siblings().removeClass('issue_sold_out_active');
+			});
+		</script>
+	</body>
+</html>

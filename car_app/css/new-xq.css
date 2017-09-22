@@ -1,0 +1,71 @@
+@charset "utf-8";
+body{
+	color: #0A5055;
+}
+.con{
+      width: 750px;
+      height: auto;
+      overflow: hidden;
+      margin-left: 10px;
+      border: 2px solid #eee;
+}
+.con>h4{
+	font-size: 1.3rem;
+      text-align: center;
+      line-height: 50px;
+}
+.con>.time{
+      text-align: center;
+      line-height: 30px;
+      font-size: 10px;
+      color: #666;
+}
+.con>.tit{
+      text-align: center;
+      font-size: 1.28rem;
+      line-height: 30px;
+}
+.con .pic{
+      width: 700px;
+      height: 430px;
+      border: 1px solid #666;
+      margin: 0 auto;
+}
+.con .pic>img{
+      width: 100%;
+      height: 100%;
+}
+.con .text{
+	  font-size: 1.2rem;
+      padding-left: 20px;
+      padding-right: 20px;
+      line-height: 30px;
+}
+.con .tet{
+      width: 640px;
+      height: auto;
+      overflow: hidden;
+      margin: 0 auto;
+}
+.con .tet .tet_a{
+      font-weight: bold;
+      line-height: 30px;
+}
+.con .tet .tet_b{
+      line-height: 30px;
+}
+.con .tet_tet{
+      width: 626px;
+      height: auto;
+      overflow: hidden;
+      margin: 0 auto;
+}
+.con .tet_tet .tet_a{
+      font-weight: bold;
+      line-height: 30px;
+      display: inline-block;
+}
+.con .tet_tet .tet_b{
+      line-height: 30px;
+      display: inline-block;
+}
