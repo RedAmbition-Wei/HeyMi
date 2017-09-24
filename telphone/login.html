@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- 页面禁止缩放 -->
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<!-- 禁止数字变成电话号码 -->
+	<meta name="format-detection" content="telphone=no">
+	<title>用户登陆</title>
+	<link rel="stylesheet" href="./css/tan.css">
+	<link rel="stylesheet" href="./font/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+</head>
+<body>
+	<div class="register">
+		<div class="register_bodyer login_body">
+			<!-- 头部 -->
+			<header class="register_nav">
+				<div>
+					<i class="fa fa-random" aria-hidden="true"></i>
+					<span>.</span>
+				</div>
+				<ul>
+					<li onclick="base.jumpPage('register.html')">REGISTER</li>
+					<li>LOGIN</li>
+					<li onclick="base.jumpPage('cart.html')">CART</li>
+				</ul>
+			</header>
+			<!-- 主体 -->
+			<div class="main_body log_body">
+				<form action="">
+					<h2 onclick="base.jumpPage('register.html')">REGISTER</h2>
+
+					<input type="text" placeholder=" Your Name" name="login_name" data-type="require,word,max=20,min=6" data-tag="登录名">
+
+					<input type="password" placeholder=" Password" name="password" data-type="require" data-tag="密码">
+					<!-- 提交 -->
+					<div class="submit-login">REGISTER</div>
+				</form>		
+			</div>
+		</div>
+	</div>
+	<footer class="f_flex comment">
+	</footer>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="./layer/layer.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/tan.js"></script>
+</body>
+</html>
